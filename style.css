@@ -34,11 +34,30 @@ header i{
     font-size: 30px;
     margin-right: 8px;
 }
+/* input taking style section starts  */
 .wrapper .input-part{
+    display: none;
     margin: 20px 25px 30px;
 }
 .input-part .info-text{
+    display: none;
     font-size: 17px;
+    text-align: center;
+    padding: 12px 10px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+.info-text.error{
+    display: block;
+    color: #721c24;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+.info-text.pending{
+    display: block;
+    color: #0c5460;
+    background: #d1ecf1;
+    border: 1px solid #bee5eb;
 }
 .input-part :where(input,button){
     width: 100%;
@@ -52,6 +71,9 @@ header i{
 .input-part input{
     text-align: center;
     border: 1px solid #bfbfbf;
+}
+.input-part input:is(:focus,:valid){
+    border: 2px solid #43AFFC;
 }
 .input-part .separator{
     height: 1px;
@@ -74,3 +96,4 @@ header i{
     cursor: pointer;
     background: #43AFFC;
 }
+/* input taking section styles ends  */
