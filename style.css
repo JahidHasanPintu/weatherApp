@@ -13,6 +13,10 @@ body{
     justify-content: center;
     min-height: 100vh;
     background: #43AFFC;
+    background-image: url(icons/cat-bg-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 .wrapper{
     width: 400px;
